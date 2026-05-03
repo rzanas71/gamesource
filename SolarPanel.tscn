@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://rfr1mim6f4k7"]
+
+[ext_resource type="Script" uid="uid://br5qowku0u3dt" path="res://node_2d.gd" id="1_i62gx"]
+[ext_resource type="Texture2D" uid="uid://dp3poc071uur8" path="res://addons/SolarPunk Sprites Export/solar panel off.png" id="2_ybolk"]
+
+[node name="SolarPanel" type="Node2D" unique_id=141917765]
+script = ExtResource("1_i62gx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=157900246]
+texture = ExtResource("2_ybolk")

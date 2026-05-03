@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://ye3yuwxf14ov"]
+
+[ext_resource type="Texture2D" uid="uid://cmk0ml6uqkr6a" path="res://addons/Asset/log.png" id="1_5gxlv"]
+[ext_resource type="Script" uid="uid://cjywpplahjxko" path="res://log.gd" id="1_a0a2b"]
+[ext_resource type="AudioStream" uid="uid://b5qgiipsdymio" path="res://addons/ribhavagrawal-coin-recieved-230517.mp3" id="3_vgnok"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a0a2b"]
+size = Vector2(12, 6.5)
+
+[node name="log" type="Area2D" unique_id=1181784379]
+collision_mask = 2
+script = ExtResource("1_a0a2b")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=677625302]
+texture = ExtResource("1_5gxlv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1696093512]
+position = Vector2(0, 0.75)
+shape = SubResource("RectangleShape2D_a0a2b")
+
+[node name="coin_sound" type="AudioStreamPlayer" parent="." unique_id=735526126]
+stream = ExtResource("3_vgnok")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

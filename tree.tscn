@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://del7e6i43d5ys"]
+
+[ext_resource type="Texture2D" uid="uid://cj1rt3ainb31g" path="res://addons/SolarPunk Sprites Export/dead tree.png" id="1_brfkd"]
+[ext_resource type="Script" uid="uid://d2qni8j2hm7xp" path="res://tree.gd" id="1_nnvrw"]
+
+[node name="tree" type="Node2D" unique_id=1818613921]
+script = ExtResource("1_nnvrw")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=608032835]
+texture = ExtResource("1_brfkd")
